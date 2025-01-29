@@ -1322,7 +1322,7 @@ summary {
     transform: rotate(360deg)
   }
 }
-@media (min-width:23.75em) {
+@media (min-width:23.4375em) {
   .item-team__name {
     margin-bottom: .3125rem
   }
@@ -1368,6 +1368,9 @@ summary {
   }
 }
 @media (min-width:70.625em) {
+  body {
+    font-size: 1.125rem
+  }
   .title {
     font-size: 2.5rem
   }
@@ -1431,7 +1434,10 @@ summary {
     margin-bottom: 3.125rem
   }
   .faq {
-    padding-block: 3.75rem
+    padding-top: 5rem
+  }
+  .faq {
+    padding-bottom: 3.75rem
   }
   .spollers-faq__title {
     font-size: 1.5rem
@@ -1477,6 +1483,9 @@ summary {
   }
 }
 @media (max-width:20em) {
+  body {
+    font-size: 1rem
+  }
   .title {
     font-size: 1.75rem
   }
@@ -1503,9 +1512,6 @@ summary {
   }
   .history {
     padding-block: 3.125rem
-  }
-  .slider-history__body {
-    width: 18.75rem
   }
   .projects {
     padding-top: 3.125rem
@@ -1538,7 +1544,10 @@ summary {
     margin-bottom: 1.875rem
   }
   .faq {
-    padding-block: 1.25rem
+    padding-top: 2.1875rem
+  }
+  .faq {
+    padding-bottom: 1.25rem
   }
   .spollers-faq__title {
     font-size: 1.25rem
@@ -1805,10 +1814,11 @@ summary {
     padding-block: 1.25rem
   }
   .cta__body {
-    gap: 1.875rem
+    gap: 1.875rem;
+    border-radius: .9375rem
   }
 }
-@media (max-width:23.74875em) {
+@media (max-width:23.43625em) {
   .team__item {
     margin: 0 -.9375rem
   }
@@ -1834,12 +1844,11 @@ summary {
   .item-team__socials {
     gap: 1.25rem
   }
-  .cta__body {
-    border-radius: 0;
-    margin: 0 -.9375rem
-  }
 }
 @media (min-width:20em)and (max-width:70.625em) {
+  body {
+    font-size: clamp(1rem ,.950617284rem + .2469135802vw ,1.125rem)
+  }
   .title {
     font-size: clamp(1.75rem ,1.4537037037rem + 1.4814814815vw ,2.5rem)
   }
@@ -1898,7 +1907,10 @@ summary {
     margin-bottom: clamp(1.875rem ,1.3811728395rem + 2.4691358025vw ,3.125rem)
   }
   .faq {
-    padding-block: clamp(1.25rem ,.262345679rem + 4.9382716049vw ,3.75rem)
+    padding-top: clamp(2.1875rem ,1.0763888889rem + 5.5555555556vw ,5rem)
+  }
+  .faq {
+    padding-bottom: clamp(1.25rem ,.262345679rem + 4.9382716049vw ,3.75rem)
   }
   .spollers-faq__title {
     font-size: clamp(1.25rem ,1.1512345679rem + .4938271605vw ,1.5rem)
@@ -1921,12 +1933,10 @@ summary {
     margin: 0 .9375rem
   }
 }
-@media (min-width:20em)and (max-width:62em) {
-  .slider-history__body {
-    width: clamp(18.75rem ,3.869047619rem + 74.4047619048vw ,50rem)
-  }
-}
 @media (min-width:48em)and (max-width:62em) {
+  .slider-history__body {
+    width: clamp(39.5625rem ,3.7767857143rem + 74.5535714286vw ,50rem)
+  }
   .slider-history__body {
     margin-right: clamp(3.25rem ,-2.75rem + 12.5vw ,5rem)
   }
