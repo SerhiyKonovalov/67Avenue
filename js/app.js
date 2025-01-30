@@ -4123,7 +4123,7 @@
             observer: true,
             observeParents: true,
             slidesPerView: 1,
-            spaceBetween: 70,
+            spaceBetween: 30,
             watchOverflow: true,
             autoHeight: false,
             speed: 700,
@@ -4137,6 +4137,10 @@
             loopAdditionalSlides: 1,
             parallax: true,
             effect: "fade",
+            autoplay: {
+                delay: 3e3,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".controls-slider-history__dotts",
                 clickable: true
@@ -4153,10 +4157,10 @@
                     spaceBetween: 20
                 },
                 768: {
-                    spaceBetween: 50
+                    spaceBetween: 33
                 },
                 992: {
-                    spaceBetween: 70
+                    spaceBetween: 30
                 }
             },
             on: {}
