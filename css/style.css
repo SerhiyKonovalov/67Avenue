@@ -609,7 +609,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center
 }
 .hero__body {
-  padding-block: 7.5rem;
+  padding-block: 8.75rem;
   max-width: 45.625rem;
   position: relative;
   z-index: 5
@@ -629,7 +629,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fed107
 }
 .hero__text {
-  max-width: 38.75rem;
+  max-width: 37.5rem;
   margin: 0 auto;
   font-weight: 500;
   line-height: 1.6;
@@ -686,7 +686,12 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 1.25rem
 }
 .slider-history__slide {
-  position: relative
+  position: relative;
+  backdrop-filter: blur(.625rem);
+  transition: all .5s!important;
+  -webkit-transform: scale(.9)!important;
+  transform: scale(.9)!important;
+  opacity: .3
 }
 .slider-history__slide::after {
   content: "";
@@ -695,6 +700,11 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
   top: 0;
   left: 100%
+}
+.slider-history__slide.swiper-slide-active {
+  -webkit-transform: scale(1)!important;
+  transform: scale(1)!important;
+  opacity: 1
 }
 .slider-history__image {
   position: relative;
@@ -1026,7 +1036,7 @@ summary {
   transition: all .2s
 }
 .spollers-faq__item:not(:last-child) {
-  border-bottom: .0625rem solid rgba(39,0,147,.5)
+  border-bottom: .0625rem solid rgba(49,56,95,.5)
 }
 .spollers-faq__title {
   display: flex;
@@ -1390,7 +1400,7 @@ summary {
     font-size: 2.75rem
   }
   .hero__title {
-    margin-bottom: 2.1875rem
+    margin-bottom: 1.875rem
   }
   .hero__text {
     margin-bottom: 3.125rem
@@ -1490,7 +1500,7 @@ summary {
     font-size: 1.75rem
   }
   .title:not(:last-child) {
-    margin-bottom: 1.5625rem
+    margin-bottom: 1.25rem
   }
   .title--smaller {
     font-size: 1.625rem
@@ -1502,10 +1512,10 @@ summary {
     margin-bottom: 1.5625rem
   }
   .hero__title {
-    font-size: 1.75rem
+    font-size: 1.5625rem
   }
   .hero__title {
-    margin-bottom: 1.5625rem
+    margin-bottom: 1.25rem
   }
   .hero__text {
     margin-bottom: 1.875rem
@@ -1566,6 +1576,10 @@ summary {
   }
 }
 @media (max-width:61.99875em) {
+  .slider-history__slide {
+    -webkit-transform: scale(.95)!important;
+    transform: scale(.95)!important
+  }
   .slider-history__content {
     max-width: 20rem;
     padding: 1.125rem;
@@ -1596,7 +1610,7 @@ summary {
 }
 @media (max-width:61.99875em)and (max-width:48em) {
   .controls-slider-history__arrow_prev {
-    margin-left: -.8125rem
+    margin-left: -.75rem
   }
   .controls-slider-history__arrow_next {
     margin-right: -.8125rem
@@ -1788,12 +1802,24 @@ summary {
     text-align: center
   }
 }
+@media (max-width:34.375em) {
+  .hero__button {
+    width: 100%
+  }
+}
 @media (max-width:29.99875em) {
   .button {
+    padding: .9375rem 2.5rem;
     width: 100%
   }
   .main-footer__logo:not(:last-child) {
     margin-bottom: .9375rem
+  }
+  .hero__title span {
+    font-size: 1.75rem
+  }
+  .hero__buttons {
+    gap: .9375rem
   }
   .growth__video {
     width: auto;
@@ -1853,7 +1879,7 @@ summary {
     font-size: clamp(1.75rem ,1.4537037037rem + 1.4814814815vw ,2.5rem)
   }
   .title:not(:last-child) {
-    margin-bottom: clamp(1.5625rem ,1.3155864198rem + 1.2345679012vw ,2.1875rem)
+    margin-bottom: clamp(1.25rem ,.8796296296rem + 1.8518518519vw ,2.1875rem)
   }
   .title--smaller {
     font-size: clamp(1.625rem ,1.3780864198rem + 1.2345679012vw ,2.25rem)
@@ -1865,10 +1891,10 @@ summary {
     margin-bottom: clamp(1.5625rem ,1.3155864198rem + 1.2345679012vw ,2.1875rem)
   }
   .hero__title {
-    font-size: clamp(1.75rem ,1.3549382716rem + 1.975308642vw ,2.75rem)
+    font-size: clamp(1.5625rem ,1.0933641975rem + 2.3456790123vw ,2.75rem)
   }
   .hero__title {
-    margin-bottom: clamp(1.5625rem ,1.3155864198rem + 1.2345679012vw ,2.1875rem)
+    margin-bottom: clamp(1.25rem ,1.0030864198rem + 1.2345679012vw ,1.875rem)
   }
   .hero__text {
     margin-bottom: clamp(1.875rem ,1.3811728395rem + 2.4691358025vw ,3.125rem)
@@ -1949,18 +1975,18 @@ summary {
 }
 @media (max-width:61.99875em)and (min-width:62em) {
   .controls-slider-history__arrow_prev {
-    margin-left: .625rem
+    margin-left: .5625rem
   }
   .controls-slider-history__arrow_next {
-    margin-right: .5625rem
+    margin-right: .4375rem
   }
 }
 @media (max-width:61.99875em)and (min-width:48em)and (max-width:62em) {
   .controls-slider-history__arrow_prev {
-    margin-left: clamp(-.8125rem ,-5.7410714286rem + 10.2678571429vw ,.625rem)
+    margin-left: clamp(-.75rem ,-5.25rem + 9.375vw ,.5625rem)
   }
   .controls-slider-history__arrow_next {
-    margin-right: clamp(-.8125rem ,-5.5267857143rem + 9.8214285714vw ,.5625rem)
+    margin-right: clamp(-.8125rem ,-5.0982142857rem + 8.9285714286vw ,.4375rem)
   }
 }
 @media (min-width:48em)and (max-width:70.625em) {
