@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="67Avenue">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250130211455">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250131140048">
 	<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
 	<link rel="icon" type="image/webp" sizes="16x16" href="img/favicons/16x16.webp">
 	<link rel="icon" type="image/webp" sizes="32x32" href="img/favicons/32x32.webp">
@@ -39,7 +39,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a class="header__logo logo" href="home.html" data-goto=".hero">
+				<a class="header__logo logo" href="#" data-goto=".hero">
 					<img class="logo__icon logo__icon--white" src="img/logo-white.webp" alt="67Avenue logo white">
 					<img class="logo__icon logo__icon--black" src="img/logo-black.webp" alt="67Avenue logo black">
 				</a>
@@ -49,22 +49,22 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="home.html#history" class="menu__link" data-goto=".history" data-goto-header><span>History</span></a>
+								<a href="#history" class="menu__link" data-goto=".history" data-goto-header><span>History</span></a>
 							</li>
 							<li class="menu__item ">
-								<a href="home.html#projects" class="menu__link" data-goto=".projects" data-goto-header><span>Projects</span></a>
+								<a href="#projects" class="menu__link" data-goto=".projects" data-goto-header><span>Projects</span></a>
 							</li>
 							<li class="menu__item">
-								<a href="home.html#growth" class="menu__link" data-goto=".growth" data-goto-header><span>Growth</span></a>
+								<a href="#growth" class="menu__link" data-goto=".growth" data-goto-header><span>Growth</span></a>
 							</li>
 							<li class="menu__item">
-								<a href="home.html#team" class="menu__link" data-goto=".team" data-goto-header><span>Team</span></a>
+								<a href="#team" class="menu__link" data-goto=".team" data-goto-header><span>Team</span></a>
 							</li>
 							<li class="menu__item">
-								<a href="home.html#faq" class="menu__link" data-goto=".faq" data-goto-header><span>FAQs</span></a>
+								<a href="#faq" class="menu__link" data-goto=".faq" data-goto-header><span>FAQs</span></a>
 							</li>
 							<li class="menu__item">
-								<a href="home.html#cta" class="menu__link" data-goto=".cta" data-goto-header><span>Join Us</span></a>
+								<a href="#cta" class="menu__link" data-goto=".cta" data-goto-header><span>Join Us</span></a>
 							</li>
 						</ul>
 					</nav>
@@ -263,12 +263,13 @@
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quae temporibus, molestias atque quia aliquid expedita fuga molestiae sint nesciunt saepe iusto adipisci quo, voluptatem, eius alias harum ducimus? Optio!
 								</p>
 							</div>
-							<a href="#" class="article-project__button read-more" itemprop="url">
+							<button data-popup="#popup-current" class="article-project__button read-more" aria-label="Read More" itemprop="url">
 								<span class="read-more__circle" aria-hidden="true">
 									<span class="read-more__icon read-more__arrow"></span>
 								</span>
 								<span class="read-more__text">Read More</span>
-							</a>
+							</button>
+
 						</div>
 						<div class="article-project__image">
 							<img src="img/projects/image-01.webp" alt="67Avenue projects Image" itemprop="image">
@@ -288,12 +289,12 @@
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quae temporibus, molestias atque quia aliquid expedita fuga molestiae sint nesciunt saepe iusto adipisci quo, voluptatem, eius alias harum ducimus? Optio!
 								</p>
 							</div>
-							<a href="#" class="article-project__button read-more" itemprop="url">
+							<button data-popup="#popup-future" class="article-project__button read-more" aria-label="Read More" itemprop="url">
 								<span class="read-more__circle" aria-hidden="true">
 									<span class="read-more__icon read-more__arrow"></span>
 								</span>
 								<span class="read-more__text">Read More</span>
-							</a>
+							</button>
 						</div>
 					</article>
 				</div>
@@ -532,6 +533,7 @@
 					</div>
 				</div>
 			</section>
+			<button id="scrollToTopBtn" class="scroll-to-top"><span>↑</span></button>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -550,22 +552,22 @@
 					<div class="main-footer__social social-footer">
 						<div class="social-footer__label">Our Socials</div>
 						<div class="social-footer__items">
-							<a href="#" class="social-footer__item" title="Telegram" target="_blank">
+							<a href="#" class="social-footer__item social-footer__item--telegram" title="Telegram" target="_blank">
 								<img src="img/socials/telegram.svg" alt="telegram icon">
 							</a>
 							<a href="" class="social-footer__item  social-footer__item--x" title="X" target="_blank">
 								<img src="img/socials/x-black.svg" alt="x icon">
 							</a>
-							<a href="" class="social-footer__item" title="Discord" target="_blank">
+							<a href="" class="social-footer__item social-footer__item--discord" title="Discord" target="_blank">
 								<img src="img/socials/discord.svg" alt="discord icon">
 							</a>
-							<a href="" class="social-footer__item" title="Youtube" target="_blank">
+							<a href="" class="social-footer__item social-footer__item--youtube" title="Youtube" target="_blank">
 								<img src="img/socials/youtube.svg" alt="youtube icon">
 							</a>
-							<a href="" class="social-footer__item" title="Twitch" target="_blank">
+							<a href="" class="social-footer__item social-footer__item--twitch" title="Twitch" target="_blank">
 								<img src="img/socials/twitch.svg" alt="twitch icon">
 							</a>
-							<a href="" class="social-footer__item" title="Instagram" target="_blank">
+							<a href="" class="social-footer__item social-footer__item--instagram" title="Instagram" target="_blank">
 								<img src="img/socials/instagram.svg" alt="instagram icon">
 							</a>
 						</div>
@@ -593,7 +595,45 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250130211455"></script>
+	<div id="popup-current" aria-hidden="true" class="popup-current popup">
+		<div class="popup-current__wrapper popup__wrapper">
+			<div class="popup-current__content popup__content">
+				<button data-close type="button" class="popup-current__close popup__close" aria-label="close button">
+					<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="currentColor" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="currentColor" stroke-linecap="square" />
+					</svg>
+				</button>
+				<h3 class="popup-current__title popup__title">Current project</h3>
+				<div class="popup-current__text popup__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-future" aria-hidden="true" class="popup-future popup">
+		<div class="popup-future__wrapper popup__wrapper">
+			<div class="popup-future__content popup__content">
+				<button data-close type="button" class="popup-future__close popup__close" aria-label="close button">
+					<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="currentColor" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="currentColor" stroke-linecap="square" />
+					</svg>
+				</button>
+				<h3 class="popup-future__title popup__title">Future project</h3>
+				<div class="popup-future__text popup__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20250131140048"></script>
 </body>
 
 </html>
