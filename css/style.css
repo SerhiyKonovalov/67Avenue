@@ -2002,6 +2002,9 @@ summary {
     padding: .9375rem 2.5rem;
     width: 100%
   }
+  .scroll-to-top span {
+    padding-top: .125rem
+  }
   .scroll-to-top {
     right: 1.5625rem
   }
