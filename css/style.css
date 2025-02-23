@@ -712,7 +712,7 @@ body::after {
 }
 .social-footer__label {
   text-align: center;
-  font-size: 1.5625rem;
+  font-size: 1.5rem;
   font-weight: 600
 }
 .social-footer__label:not(:last-child) {
@@ -726,7 +726,7 @@ body::after {
 }
 .social-footer__item {
   background: #fed107;
-  padding: .5625rem;
+  padding: .4375rem;
   border-radius: .9375rem;
   border: .1875rem solid #fed107;
   display: flex;
@@ -735,8 +735,8 @@ body::after {
   transition: all .2s
 }
 .social-footer__item img {
-  width: 2.1875rem;
-  height: 2.1875rem
+  width: 2rem;
+  height: 2rem
 }
 .social-footer__item:hover {
   background: #cfab0b
@@ -745,11 +745,11 @@ body::after {
   border: .1875rem solid #40b3e0
 }
 .social-footer__item--x {
-  padding: .625rem
+  padding: .5rem
 }
 .social-footer__item--x img {
-  width: 2.0625rem;
-  height: 2.0625rem
+  width: 1.875rem;
+  height: 1.875rem
 }
 .social-footer__item--x:hover {
   border: .1875rem solid #000
@@ -1954,15 +1954,8 @@ summary {
   .social-footer__label {
     font-size: 1.375rem
   }
-  .social-footer__item {
-    padding: .4375rem
-  }
-  .social-footer__item img {
-    width: 2rem;
-    height: 2rem
-  }
   .social-footer__item--x {
-    padding: .5rem
+    padding: .375rem
   }
   .history__header {
     margin-bottom: 2.5rem
@@ -2016,10 +2009,10 @@ summary {
     cursor: default
   }
 }
-@media (max-width:47.99875em)and (max-width:47.99875em) {
+@media (max-width:47.99875em)and (max-width:29.99875em) {
   .social-footer__item--x img {
-    width: 1.875rem;
-    height: 1.875rem
+    width: 1.6875rem;
+    height: 1.6875rem
   }
 }
 @media (max-width:34.37375em) {
@@ -2052,6 +2045,23 @@ summary {
   }
   .main-footer__logo:not(:last-child) {
     margin-bottom: .9375rem
+  }
+  .social-footer__label {
+    font-size: 1.25rem
+  }
+  .social-footer__label:not(:last-child) {
+    margin-bottom: .9375rem
+  }
+  .social-footer__items {
+    gap: .75rem
+  }
+  .social-footer__item {
+    border-radius: .75rem;
+    padding: .3125rem
+  }
+  .social-footer__item img {
+    width: 1.8125rem;
+    height: 1.8125rem
   }
   .hero__title span {
     font-size: 1.75rem
