@@ -91,11 +91,13 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background: #fed107;
-  border: .0625rem solid #fff;
-  border-radius: .625rem
+  border-radius: .625rem;
+  border: .125rem solid #252655
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: #cfab0b
+  background: #cfab0b;
+  background: #e0bb14;
+  border: .125rem solid #fff
 }
 .wrapper {
   min-height: 100%;
@@ -297,8 +299,8 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 100;
   width: 3.125rem;
   height: 3.125rem;
-  right: 1.875rem;
-  bottom: 3.125rem;
+  right: 3.75rem;
+  bottom: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,6 +350,10 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-transform: translateY(-.1875rem);
     transform: translateY(-.1875rem)
   }
+}
+.menu-open .scroll-to-top {
+  opacity: 0;
+  visibility: hidden
 }
 .icon-menu {
   display: none
@@ -420,8 +426,8 @@ body::after {
   position: absolute;
   width: 1.5625rem;
   height: 1.5625rem;
-  top: 1.25rem;
-  right: .9375rem;
+  top: 1.5625rem;
+  right: 1.25rem;
   color: #000;
   transition: all .2s
 }
@@ -615,7 +621,7 @@ body::after {
   flex-wrap: wrap;
   gap: .3125rem .9375rem
 }
-.menu__link {
+.menu__button {
   font-size: 1.125rem;
   padding: .4375rem .75rem;
   color: #fff;
@@ -624,7 +630,7 @@ body::after {
   transition: all .5s;
   position: relative
 }
-.menu__link::after {
+.menu__button::after {
   content: "";
   position: absolute;
   width: 0;
@@ -635,22 +641,22 @@ body::after {
   transition: all .3s;
   border-radius: .625rem
 }
-.menu__link._navigator-active,
-.menu__link.active,
-.menu__link:hover {
+.menu__button._navigator-active,
+.menu__button.active,
+.menu__button:hover {
   color: #31385f
 }
-.menu__link._navigator-active::after,
-.menu__link.active::after,
-.menu__link:hover::after {
+.menu__button._navigator-active::after,
+.menu__button.active::after,
+.menu__button:hover::after {
   width: 100%;
   height: 100%;
   left: 0
 }
-._header-scroll .menu__link {
+._header-scroll .menu__button {
   color: #31385f
 }
-.menu__link span {
+.menu__button span {
   position: relative;
   z-index: 3
 }
@@ -1068,6 +1074,7 @@ body::after {
   background: linear-gradient(360deg,#0a0b0f 0,#333b6f 100%)
 }
 .growth__container {
+  max-width: 53.125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1181,7 +1188,7 @@ body::after {
 .item-team__icon {
   width: 1.875rem;
   height: 1.875rem;
-  transition: all .3s
+  transition: all .2s
 }
 .item-team__icon:hover {
   -webkit-transform: scale(1.2);
@@ -1252,7 +1259,7 @@ summary {
 .spollers-faq__body>p:not(:last-child) {
   margin-bottom: .9375rem
 }
-.cta__body {
+.join-us__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1261,17 +1268,17 @@ summary {
   padding-block: 3.125rem;
   border-radius: 1.25rem
 }
-.cta__title {
+.join-us__title {
   color: #fff
 }
-.cta__title:not(:last-child) {
+.join-us__title:not(:last-child) {
   margin-bottom: 1.25rem
 }
-.cta__text {
+.join-us__text {
   max-width: none;
   color: #fff
 }
-.cta__button {
+.join-us__button {
   white-space: nowrap
 }
 @font-face {
@@ -1540,7 +1547,7 @@ summary {
   .header__container::before {
     border-radius: .625rem
   }
-  ._header-scroll .menu__link {
+  ._header-scroll .menu__button {
     font-size: 1rem
   }
   .slider-history__content {
@@ -1635,13 +1642,13 @@ summary {
   .spollers-faq__body {
     font-size: 1.125rem
   }
-  .cta {
+  .join-us {
     padding-top: 4.375rem
   }
-  .cta {
+  .join-us {
     padding-bottom: 6.25rem
   }
-  .cta__body {
+  .join-us__body {
     padding-inline: 3.125rem
   }
 }
@@ -1751,17 +1758,21 @@ summary {
   .spollers-faq__body {
     font-size: 1rem
   }
-  .cta {
+  .join-us {
     padding-top: 1.25rem
   }
-  .cta {
+  .join-us {
     padding-bottom: 3.125rem
   }
-  .cta__body {
+  .join-us__body {
     padding-inline: .9375rem
   }
 }
 @media (max-width:61.99875em) {
+  .scroll-to-top {
+    right: 3.125rem;
+    bottom: 3.125rem
+  }
   .slider-history__slide {
     -webkit-transform: scale(.95)!important;
     transform: scale(.95)!important
@@ -1803,6 +1814,12 @@ summary {
   }
 }
 @media (max-width:47.99875em) {
+  .button {
+    padding: .9375rem 2.5rem
+  }
+  .scroll-to-top {
+    right: 2.5rem
+  }
   .icon-menu {
     display: block;
     position: relative;
@@ -1921,7 +1938,7 @@ summary {
   .menu__list {
     row-gap: .625rem
   }
-  .menu__link {
+  .menu__button {
     padding: .375rem .5rem;
     font-size: 1.5rem;
     color: #31385f;
@@ -1933,6 +1950,19 @@ summary {
   }
   .footer__bottom {
     padding-block: 2.5rem
+  }
+  .social-footer__label {
+    font-size: 1.375rem
+  }
+  .social-footer__item {
+    padding: .4375rem
+  }
+  .social-footer__item img {
+    width: 2rem;
+    height: 2rem
+  }
+  .social-footer__item--x {
+    padding: .5rem
   }
   .history__header {
     margin-bottom: 2.5rem
@@ -1974,7 +2004,7 @@ summary {
   .spollers-faq__body {
     padding-right: 0
   }
-  .cta__body {
+  .join-us__body {
     flex-direction: column;
     gap: 2.1875rem;
     padding-block: 2.5rem;
@@ -1986,6 +2016,12 @@ summary {
     cursor: default
   }
 }
+@media (max-width:47.99875em)and (max-width:47.99875em) {
+  .social-footer__item--x img {
+    width: 1.875rem;
+    height: 1.875rem
+  }
+}
 @media (max-width:34.37375em) {
   .main-footer {
     grid-template-columns: auto;
@@ -1993,13 +2029,15 @@ summary {
   }
 }
 @media (max-width:34.375em) {
+  .hero__text {
+    text-align: justify
+  }
   .hero__button {
     width: 100%
   }
 }
 @media (max-width:29.99875em) {
   .button {
-    padding: .9375rem 2.5rem;
     width: 100%
   }
   .scroll-to-top span {
@@ -2039,7 +2077,7 @@ summary {
   .spollers-faq__title {
     padding-block: 1.25rem
   }
-  .cta__body {
+  .join-us__body {
     gap: 1.875rem;
     border-radius: .9375rem
   }
@@ -2150,13 +2188,13 @@ summary {
   .spollers-faq__body {
     font-size: clamp(1rem ,.950617284rem + .2469135802vw ,1.125rem)
   }
-  .cta {
+  .join-us {
     padding-top: clamp(1.25rem ,.0154320988rem + 6.1728395062vw ,4.375rem)
   }
-  .cta {
+  .join-us {
     padding-bottom: clamp(3.125rem ,1.8904320988rem + 6.1728395062vw ,6.25rem)
   }
-  .cta__body {
+  .join-us__body {
     padding-inline: clamp(.9375rem ,.0733024691rem + 4.3209876543vw ,3.125rem)
   }
 }
