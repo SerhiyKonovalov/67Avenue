@@ -1,161 +1,606 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>67Avenue</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="67Avenue">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250223173420">
+	<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon.ico">
+	<link rel="icon" type="image/webp" sizes="16x16" href="img/favicons/16x16.webp">
+	<link rel="icon" type="image/webp" sizes="32x32" href="img/favicons/32x32.webp">
+	<link rel="icon" type="image/webp" sizes="48x48" href="img/favicons/48x48.webp">
+	<link rel="icon" type="image/webp" sizes="96x96" href="img/favicons/96x96.webp">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/180x180.webp">
+	<link rel="icon" type="image/webp" sizes="400x400" href="img/favicons/400x400.webp">
+	<link rel="canonical" href="https://67avenue.com">
+	<meta name="robots" content="follow, index, max-snippet:-1, max-image-preview:large">
+	<meta name="description" content="67Avenue clan website | future project">
+	<meta property="og:site_name" content="67Avenue.com">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://67avenue.com">
+	<meta property="og:title" content="67Avenue">
+	<meta property="og:description" content="67Avenue clan website | future project">
+	<meta property="og:image" content="img/favicons/400x400.webp">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="400">
+	<meta property="og:image:alt" content="67Avenue logo">
+	<meta property="og:image:type" content="image/webp">
+	<meta property="twitter:title" content="67Avenue">
+	<meta property="twitter:description" content="67Avenue clan website | future project">
+	<meta property="twitter:image" content="img/favicons/400x400.webp">
+	<meta property="twitter:card" content="summary">
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>67Avenue</h1>
-		<h2>Ready-made pages:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Home</a></li>
-		</ol>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<button class="header__logo logo" data-goto=".hero" aria-label="Logotype 67Avenue">
+					<img class="logo__icon logo__icon--white" src="img/logo-white.webp" alt="67Avenue logo white">
+					<img class="logo__icon logo__icon--black" src="img/logo-black.webp" alt="67Avenue logo black">
+				</button>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu" aria-label="burger menu"><span></span></button>
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<button class="menu__button" data-goto=".history" data-goto-header><span>History</span></button>
+							</li>
+							<li class="menu__item ">
+								<button class="menu__button" data-goto=".projects" data-goto-header><span>Projects</span></button>
+							</li>
+							<li class="menu__item">
+								<button class="menu__button" data-goto=".growth" data-goto-header><span>Growth</span></button>
+							</li>
+							<li class="menu__item">
+								<button class="menu__button" data-goto=".team" data-goto-header><span>Team</span></button>
+							</li>
+							<li class="menu__item">
+								<button class="menu__button" data-goto=".faq" data-goto-header><span>FAQs</span></button>
+							</li>
+							<li class="menu__item">
+								<button class="menu__button" data-goto=".join-us" data-goto-header><span>Join Us</span></button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero" id="hero" itemscope itemtype="https://schema.org/Article">
+				<div class="hero__container">
+					<div class="hero__body">
+						<h1 class="hero__title" itemprop="headline">
+							<span itemprop="author" itemscope itemtype="https://schema.org/Organization">
+								<a style="display: inline-block;" itemprop="url" href="https://67avenue.com">
+									<span itemprop="name">67Avenue</span>
+								</a>
+							</span><br>
+							Your Skill – Your Currency
+						</h1>
+						<div class="hero__text" itemprop="description">
+							<p>Gaming has long surpassed being just entertainment — it now offers new opportunities for growth and earnings. Our project is designed for those who want not just to play but to shape the future of the gaming industry. Your participation matters here: compete, earn, and redefine the rules with us.</p>
+						</div>
+						<div class="hero__buttons">
+							<button class="hero__button hero__button--learn button button--white" data-goto-header data-goto=".history" itemprop="url">Learn more</button>
+							<button class="hero__button hero__button--join-us button button--yellow" data-goto-header data-goto=".join-us" itemprop="url">Join Us</button>
+						</div>
+					</div>
+				</div>
+				<div class="hero__bg-image">
+					<img src="img/hero/bg.webp" alt="Background image" itemprop="image">
+				</div>
+			</section>
+			<section class="history" id="history" data-watch="navigator">
+				<div class="history__container">
+					<article class="history__header" itemscope itemtype="https://schema.org/Article">
+						<h2 class="history__title title" itemprop="headline"><span>History</span> 67Avenue</h2>
+						<div class="history__text text" itemprop="description">
+							<p>
+								The history of our organization began in 2019, united by a passion for gaming and the drive to win.
+								Over time, we realized we could do more, so we started organizing our own events and gaming tournaments.
+								We have successfully hosted dozens of mobile gaming tournaments. Over the years, thousands of players and tens of thousands in prize money have passed through our competitions.
+								Now, it’s time to take things to the next level and embrace new opportunities.
+							</p>
+						</div>
+					</article>
+					<div class="history__slider slider-history">
+						<div class="slider-history__body">
+							<div class="slider-history__wrapper swiper-wrapper">
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/01.webp" alt="Slide image" itemprop="image">
+									</div>
+
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Random Lobby Duo</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>
+												Duo Lobby Game <br>
+												An intense duo competition where teams battled for first place, seeking both recognition and a share of the prize pool.
+											</p>
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/02.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Final of Tournament – $10,000</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>
+												Results of the $10,000 tournament <br>
+												This was one of our largest tournaments, where Team BLR claimed victory with a decisive score.</p>
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/03.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">FPP Announce of Tournament</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>
+												First-Person Tournament Announcement – $10,000 <br>
+												A highly anticipated first-person tournament announcement that generated massive hype. Over 500 participants joined the event.
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/04.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Lorem, ipsum</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, nihil!</p>
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/05.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Lorem, ipsum</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque animi nobis iusto, quis voluptatum.</p>
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/06.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Lorem, ipsum</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, nihil!</p>
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/07.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Lorem, ipsum</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque animi nobis</p>
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/08.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Lorem, ipsum</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque animi nobis</p>
+										</div>
+									</div>
+								</article>
+								<article class="slider-history__slide swiper-slide" itemscope itemtype="https://schema.org/Article">
+									<div class="slider-history__image">
+										<img src="img/history/09.webp" alt="Slide image" itemprop="image">
+									</div>
+									<div data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-history__content">
+										<div class="slider-history__title">
+											<h3 itemprop="headline">Lorem, ipsum</h3>
+										</div>
+										<div class="slider-history__text" itemprop="description">
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque animi nobis</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="slider-history__controls controls-slider-history">
+							<div class="controls-slider-history__arrows slider-arrows">
+								<button type="button" class="controls-slider-history__arrow controls-slider-history__arrow_prev" aria-label="previous slide"></button>
+								<button type="button" class="controls-slider-history__arrow controls-slider-history__arrow_next" aria-label="next slide"></button>
+							</div>
+							<div class="controls-slider-history__dotts"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="projects" id="projects" data-watch="navigator">
+				<div class="projects__container">
+					<h2 class="projects__title title" itemprop="headline"><span>Projects</span></h2>
+					<article class="projects__article article-project article-project--01" itemscope itemtype="https://schema.org/Article">
+						<div class="article-project__content">
+							<h3 class="article-project__title title title--smaller" itemprop="headline">Current project</h3>
+							<div class="article-project__text text" itemprop="description">
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quae temporibus, molestias atque quia aliquid expedita fuga molestiae sint nesciunt saepe iusto adipisci quo, voluptatem, eius alias harum ducimus? Optio!
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quae temporibus, molestias atque quia aliquid expedita fuga molestiae sint nesciunt saepe iusto adipisci quo, voluptatem, eius alias harum ducimus? Optio!
+								</p>
+							</div>
+							<button data-popup="#popup-current" class="article-project__button read-more" aria-label="Read More" itemprop="url">
+								<span class="read-more__circle">
+									<span class="read-more__icon read-more__arrow"></span>
+								</span>
+								<span class="read-more__text">Read More</span>
+							</button>
+
+						</div>
+						<div class="article-project__image">
+							<img src="img/projects/image-01.webp" alt="67Avenue projects Image" itemprop="image">
+						</div>
+					</article>
+					<article class="projects__article article-project article-project--02" itemscope itemtype="https://schema.org/Article">
+						<div class="article-project__image">
+							<img src="img/projects/image-02.webp" alt="67Avenue projects Image" itemprop="image">
+						</div>
+						<div class="article-project__content">
+							<h3 class="article-project__title title title--smaller" itemprop="headline">Future project</h3>
+							<div class="article-project__text text" itemprop="description">
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quae temporibus, molestias atque quia aliquid expedita fuga molestiae sint nesciunt saepe iusto adipisci quo, voluptatem, eius alias harum ducimus? Optio!
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quae temporibus, molestias atque quia aliquid expedita fuga molestiae sint nesciunt saepe iusto adipisci quo, voluptatem, eius alias harum ducimus? Optio!
+								</p>
+							</div>
+							<button data-popup="#popup-future" class="article-project__button read-more" aria-label="Read More" itemprop="url">
+								<span class="read-more__circle">
+									<span class="read-more__icon read-more__arrow"></span>
+								</span>
+								<span class="read-more__text">Read More</span>
+							</button>
+						</div>
+					</article>
+				</div>
+			</div>
+			<article class="growth" id="growth" data-watch="navigator" itemscope itemtype="https://schema.org/Article">
+				<div class="growth__container">
+					<div class="growth__body">
+						<div class="growth__header">
+							<h2 class="growth__title title" itemprop="headline">Lorem ipsum dolor <span>Growth</span></h2>
+							<div class="growth__text text" itemprop="description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio suscipit quisquam sapiente aliquid nemo illum, quibusdam ut provident sed odit numquam eius iste exercitationem. Unde, doloribus voluptates? Libero, nihil.
+							</div>
+						</div>
+					</div>
+					<div class="growth__video">
+						<video poster="img/growth/preview.webp" controls preload="auto">
+							<source src="img/growth/video.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</article>
+			<section class="team" id="team" data-watch="navigator">
+				<div class="team__container">
+					<h2 class="team__title title"><span>Our Team</span></h2>
+					<div class="team__items">
+						<div class="team__item item-team">
+							<div class="item-team__image">
+								<img src="img/team/01.webp" alt="photo of team member">
+							</div>
+							<div class="item-team__info">
+								<div class="item-team__about">
+									<div class="item-team__name">Sasha 67AvFRaag</div>
+									<div class="item-team__role">Clan leader</div>
+								</div>
+								<div class="item-team__socials">
+									<a href="#" class="item-team__social">
+										<img src="img/socials/telegram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/instagram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/discord-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team__item item-team">
+							<div class="item-team__image">
+								<img src="img/team/02.webp" alt="photo of team member">
+							</div>
+							<div class="item-team__info">
+								<div class="item-team__about">
+									<div class="item-team__name">Georgy TANDEFF</div>
+									<div class="item-team__role">Genius</div>
+								</div>
+								<div class="item-team__socials">
+									<a href="#" class="item-team__social">
+										<img src="img/socials/telegram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/instagram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/discord-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team__item item-team">
+							<div class="item-team__image">
+								<img src="img/team/03.webp" alt="photo of team member">
+							</div>
+							<div class="item-team__info">
+								<div class="item-team__about">
+									<div class="item-team__name">Serhiy 67AvXlop4uk</div>
+									<div class="item-team__role">Manager</div>
+								</div>
+								<div class="item-team__socials">
+									<a href="#" class="item-team__social">
+										<img src="img/socials/telegram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/instagram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/discord-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team__item item-team">
+							<div class="item-team__image">
+								<img src="img/team/04.webp" alt="photo of team member">
+							</div>
+							<div class="item-team__info">
+								<div class="item-team__about">
+									<div class="item-team__name">Areg QWINKE</div>
+									<div class="item-team__role">Gay</div>
+								</div>
+								<div class="item-team__socials">
+									<a href="#" class="item-team__social">
+										<img src="img/socials/telegram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/instagram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/discord-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team__item item-team">
+							<div class="item-team__image">
+								<img src="img/team/05.webp" alt="photo of team member">
+							</div>
+							<div class="item-team__info">
+								<div class="item-team__about">
+									<div class="item-team__name">Natalia 67AvIKONA</div>
+									<div class="item-team__role">Knows everything</div>
+								</div>
+								<div class="item-team__socials">
+									<a href="#" class="item-team__social">
+										<img src="img/socials/telegram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/instagram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/discord-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="team__item item-team">
+							<div class="item-team__image">
+								<img src="img/team/06.webp" alt="photo of team member">
+							</div>
+							<div class="item-team__info">
+								<div class="item-team__about">
+									<div class="item-team__name">Name | Nick</div>
+									<div class="item-team__role">Role</div>
+								</div>
+								<div class="item-team__socials">
+									<a href="#" class="item-team__social">
+										<img src="img/socials/telegram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/instagram-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+									<a href="#" class="item-team__social">
+										<img src="img/socials/discord-white.svg" alt="social icon" class="item-team__icon">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq" id="faq" data-watch="navigator" itemscope itemtype="https://schema.org/FAQPage">
+				<div class="faq__container">
+					<h2 class="faq__title title" itemprop="headline">Frequently Asked Questions</h2>
+					<div data-spollers data-one-spoller data-spollers-speed="400" class="faq__spollers spollers-faq">
+						<details class="spollers-faq__item" data-open itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-faq__title" itemprop="name">Why are we creating this project?</summary>
+							<div class="spollers-faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas veritatis illum doloremque laudantium adipisci saepe sequi in ullam. Eligendi quaerat explicabo vitae deserunt reiciendis voluptatem nemo aut possimus ducimus exercitationem!</p>
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas veritatis illum doloremque laudantium adipisci saepe sequi in ullam. Eligendi quaerat explicabo vitae deserunt reiciendis voluptatem nemo aut possimus ducimus exercitationem!</p>
+							</div>
+						</details>
+						<details class="spollers-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-faq__title" itemprop="name">What benefits do I get by becoming a part of your community?</summary>
+							<div class="spollers-faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus aspernatur iste distinctio hic sed, praesentium est facilis? Dolores tenetur possimus dignissimos, beatae ad esse quos dolorem alias provident!</p>
+							</div>
+						</details>
+						<details class="spollers-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-faq__title" itemprop="name">What makes our clan different from others?</summary>
+							<div class="spollers-faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas veritatis illum doloremque laudantium adipisci saepe sequi in ullam. Eligendi quaerat explicabo vitae deserunt reiciendis voluptatem nemo aut possimus ducimus exercitationem!</p>
+							</div>
+						</details>
+						<details class="spollers-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-faq__title" itemprop="name">What does the future hold for you?</summary>
+							<div class="spollers-faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas veritatis illum doloremque laudantium adipisci saepe sequi in ullam. Eligendi quaerat explicabo vitae deserunt reiciendis voluptatem nemo aut possimus ducimus exercitationem!</p>
+							</div>
+						</details>
+						<details class="spollers-faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+							<summary class="spollers-faq__title" itemprop="name">How can I follow your progress and news?</summary>
+							<div class="spollers-faq__body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+								<p itemprop="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas veritatis illum doloremque laudantium adipisci saepe sequi in ullam. Eligendi quaerat explicabo vitae deserunt reiciendis voluptatem nemo aut possimus ducimus exercitationem!</p>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
+			<section class="join-us" id="join-us" data-watch="navigator">
+				<div class="join-us__container">
+					<div class="join-us__body" itemscope itemtype="https://schema.org/Article">
+						<div class="join-us__content">
+							<h2 class="join-us__title title" itemprop="headline">Want to become part of our team?</h2>
+							<div class="join-us__text text" itemprop="description">
+								<p>Be part of an unstoppable team that's shaping the future of esports. Whether you're a skilled player, a creative strategist, or a passionate enthusiast, there's a place for you here. Together, we’ll conquer challenges, win championships, and build a thriving community.</p>
+							</div>
+						</div>
+						<a href="#" class="join-us__button contact-us" itemprop="url">
+							<div class="svg-wrapper-1">
+								<div class="contact-us__wrapper">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+										<path fill="none" d="M0 0h24v24H0z"></path>
+										<path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+									</svg>
+								</div>
+							</div>
+							<span>Contact us</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<button id="scrollToTopBtn" class="scroll-to-top" title="Scroll Up"><span>↑</span></button>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__main main-footer">
+					<div class="main-footer__body">
+						<button class="main-footer__logo logo" data-goto=".hero" aria-label="Logotype 67Avenue">
+							<img class="logo__icon logo__icon--white" src="img/logo-white.webp" alt="67Avenue logo white">
+							<img class="logo__icon logo__icon--black" src="img/logo-black.webp" alt="67Avenue logo black">
+						</button>
+						<div class="main-footer__text">
+							<p>67Avenue — lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+						</div>
+					</div>
+					<div class="main-footer__social social-footer">
+						<div class="social-footer__label">Our Socials</div>
+						<div class="social-footer__items">
+							<a href="#" class="social-footer__item social-footer__item--telegram" title="Telegram" target="_blank">
+								<img src="img/socials/telegram.svg" alt="telegram icon">
+							</a>
+							<a href="" class="social-footer__item  social-footer__item--x" title="X (Twitter)" target="_blank">
+								<img src="img/socials/x-black.svg" alt="x icon">
+							</a>
+							<a href="" class="social-footer__item social-footer__item--discord" title="Discord" target="_blank">
+								<img src="img/socials/discord.svg" alt="discord icon">
+							</a>
+							<a href="" class="social-footer__item social-footer__item--youtube" title="Youtube" target="_blank">
+								<img src="img/socials/youtube.svg" alt="youtube icon">
+							</a>
+							<a href="" class="social-footer__item social-footer__item--twitch" title="Twitch" target="_blank">
+								<img src="img/socials/twitch.svg" alt="twitch icon">
+							</a>
+							<a href="" class="social-footer__item social-footer__item--instagram" title="Instagram" target="_blank">
+								<img src="img/socials/instagram.svg" alt="instagram icon">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copy">© 2025 Copyright 67Avenue</div>
+				</div>
+			</div>
+			<div class="footer__bg-image">
+				<img src="img/hero/bg.webp" alt="Background image">
+			</div>
+		</footer>
 	</div>
+	<div id="popup-current" aria-hidden="true" class="popup-current popup">
+		<div class="popup-current__wrapper popup__wrapper">
+			<div class="popup-current__content popup__content">
+				<button data-close type="button" class="popup-current__close popup__close" aria-label="close button">
+					<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="currentColor" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="currentColor" stroke-linecap="square" />
+					</svg>
+				</button>
+				<h3 class="popup-current__title popup__title">Current project</h3>
+				<div class="popup-current__text popup__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-future" aria-hidden="true" class="popup-future popup">
+		<div class="popup-future__wrapper popup__wrapper">
+			<div class="popup-future__content popup__content">
+				<button data-close type="button" class="popup-future__close popup__close" aria-label="close button">
+					<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="currentColor" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="currentColor" stroke-linecap="square" />
+					</svg>
+				</button>
+				<h3 class="popup-future__title popup__title">Future project</h3>
+				<div class="popup-future__text popup__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, numquam consectetur sit quisquam aut maiores! Dolores cupiditate laborum molestiae iure temporibus aperiam, magnam quasi consequatur. Laborum, consequatur laudantium. Ex, autem!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20250223173420"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
